@@ -1,4 +1,4 @@
-Verify user can Sign-in with valid credentials
+**Verify user can Sign-in with valid credentials
 
 Preconditions
 User account exists
