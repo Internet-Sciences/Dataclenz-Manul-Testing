@@ -14,3 +14,4 @@ User should redirect to DataFlows page
 Expected result
 User should successfully login
 Dashboard page should display
+<img width="1402" height="881" alt="image" src="https://github.com/user-attachments/assets/4b66a95c-c4fa-4f43-be76-10fa0b783e8c" />
