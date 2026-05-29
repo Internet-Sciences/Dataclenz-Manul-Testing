@@ -1,2 +1,2 @@
-# Dataclenz-Manul-Testing
+# Dataclenz-Manual-Testing
 Manual Test cases
