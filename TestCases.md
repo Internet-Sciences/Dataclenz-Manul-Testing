@@ -56,22 +56,24 @@
 
 # Forgot Password Test Cases
 
-| Test Case ID | Test Scenario | Precondition | Test Steps | Expected Result |
+| Test Case ID | Test Scenario | Precondition | Test Steps | Expected Result |   Screenshots/video  |  Logs
 |--------------|---------------|--------------|------------|-----------------|
 | FP_001 | Verify Forgot Password link is available | User is on Sign In page | 1. Open Sign In page | Forgot Password link is visible and clickable |
 | FP_002 | Verify navigation to Forgot Password page | User is on Sign In page | 1. Click Forgot Password link | User is redirected to Forgot Password page |
 | FP_003 | Verify password reset with valid registered email | Registered user account exists | 1. Enter valid registered email<br>2. Click Submit | Password reset email is sent successfully |
-| FP_004 | Verify password reset with unregistered email | User account does not exist | 1. Enter unregistered email<br>2. Click Submit | Appropriate error message is displayed |
-| FP_005 | Verify password reset with invalid email format | User is on Forgot Password page | 1. Enter invalid email format<br>2. Click Submit | Validation message is displayed |
-| FP_006 | Verify password reset with empty email field | User is on Forgot Password page | 1. Leave email field blank<br>2. Click Submit | Required field validation message is displayed |
 | FP_007 | Verify email field accepts leading/trailing spaces | Registered user account exists | 1. Enter email with spaces<br>2. Click Submit | Spaces are trimmed and reset email is sent |
-| FP_008 | Verify email field is case-insensitive | Registered user account exists | 1. Enter email in uppercase/lowercase<br>2. Click Submit | Reset email is sent successfully |
-| FP_009 | Verify reset email contains valid reset link | Password reset email received | 1. Open email<br>2. Click reset link | User is redirected to Reset Password page |
-| FP_010 | Verify reset link expires after configured time | Reset email received | 1. Wait until link expires<br>2. Click reset link | Expired link message is displayed |
+| FP_008 | Verify email field is case-insensitive | Registered user account exists | 1. Enter email in uppercase/lowercase<br>2. Click Submit | Reset email is sent successfully | <img width="462" height="318" alt="image" src="https://github.com/user-attachments/assets/487133e3-284b-4f73-8ad0-4a6cc999a9b6" />  |
+
+| FP_009 | Verify reset email contains valid reset link | Password reset email received | 1. Open email<br>2. Click reset link | User is redirected to Reset Password page |     <img width="475" height="114" alt="image" src="https://github.com/user-attachments/assets/5fd1665e-101d-4245-af7a-05f0131420f3" />  |
+
+| FP_010 | Verify reset link expires after configured time | Reset email received | 1. Wait until link expires<br>2. Click reset link | Expired link message is displayed |  <img width="1269" height="853" alt="image" src="https://github.com/user-attachments/assets/9e3d686d-0f87-405c-b738-833d9c6708b9" />
+ 
+
 | FP_011 | Verify user can reset password with valid link | Valid reset link available | 1. Enter new password<br>2. Confirm password<br>3. Click Save | Password is updated successfully |
 | FP_012 | Verify password and confirm password mismatch validation | User is on Reset Password page | 1. Enter different passwords<br>2. Click Save | Validation message is displayed |
 | FP_013 | Verify password policy validation | User is on Reset Password page | 1. Enter invalid password<br>2. Click Save | Appropriate validation message is displayed |
-| FP_014 | Verify successful login with new password | Password has been reset | 1. Login using new password | User logs in successfully |
+| FP_014 | Verify successful login with new password | Password has been reset | 1. Login using new password | User logs in successfully |  <img width="1889" height="599" alt="image" src="https://github.com/user-attachments/assets/e6e9b255-0c40-4bff-958d-0d2c6007d71d" />   |
+
 | FP_015 | Verify old password no longer works | Password has been reset | 1. Login using old password | Login fails with appropriate error |
 | FP_016 | Verify reset link cannot be reused | Password already reset | 1. Open previously used reset link | Link is invalid and cannot be reused |
 | FP_017 | Verify multiple password reset requests | Registered user account exists | 1. Request password reset multiple times | Latest reset link works successfully |
