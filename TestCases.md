@@ -28,3 +28,10 @@
 | Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
 |--------------|--------------|---------------|-------|-----------------|------------|------|
 | TC03 | User should have application aceess to Signin account | User should not be able to sign-in account with incorrect Emaild | Open Dataclenz (localhost)                   EmailId: Dctest34@yopmail.com     Password: Test1234!                             Click Sign-up | User should receive message like Invalid Credentials and shoud see pop up message   |             <img width="423" height="538" alt="image" src="https://github.com/user-attachments/assets/ff2d7205-6207-41a5-9a6a-08c0d798b087" />
+
+
+# Verify Login with Only Password Filled
+
+| Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
+|--------------|--------------|---------------|-------|-----------------|------------|------|
+| TC03 | User should have application aceess to Signin account | User should not be able to sign-in account with blank Emaild | Open Dataclenz (localhost)                   EmailId:      Password: Test1234!    |  User should not be able to signin account and should not be able to click on sign in button    |<img width="391" height="450" alt="image" src="https://github.com/user-attachments/assets/723f0e90-9883-4cca-ad20-7953fad9c9cd" />
