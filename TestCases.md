@@ -58,7 +58,7 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| FP_001 | User is on Sign In page | User is redirected to Forgot Password page | 1. Open Sign In page<br>2. Click Forgot Password | Forgot Password page is displayed successfully | ![FP_001](images/FP_001.png) |
+| FP_001 | User is on Sign In page | User is redirected to Forgot Password page | 1. Open Sign In page<br>2. Click Forgot Password | Forgot Password page is displayed successfully | ![FP_001](https://github.com/user-attachments/assets/487133e3-284b-4f73-8ad0-4a6cc999a9b6) |
 | FP_002 | User is on Forgot Password page | Password reset email is sent | 1. Enter valid registered email<br>2. Click Submit | Success message is displayed and reset email is sent | ![FP_002](images/FP_002.png) |
 | FP_003 | User is on Forgot Password page | No password reset email is sent | 1. Enter unregistered email<br>2. Click Submit | Appropriate error message is displayed | ![FP_003](images/FP_003.png) |
 | FP_004 | User is on Forgot Password page | Validation message is displayed | 1. Enter invalid email format<br>2. Click Submit | Email format validation message is shown | ![FP_004](images/FP_004.png) |
