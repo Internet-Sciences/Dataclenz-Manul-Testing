@@ -58,16 +58,13 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| FP_001 | User is on Sign In page | User is redirected to Forgot Password page | 1. Open Sign In page<br>2. Click Forgot Password | Forgot Password page is displayed successfully | <img width="475" height="114" alt="image" src="https://github.com/user-attachments/assets/d1440228-9f73-413e-bd45-ed4f9b8fefe0" />
-|
-| FP_002 | User is on Forgot Password page | Password reset email is sent | 1. Enter valid registered email<br>2. Click Submit | Success message is displayed and reset email is sent |<img width="463" height="327" alt="image" src="https://github.com/user-attachments/assets/8f20c4a3-2d7a-4b4d-bec2-eb2abd8699f8" />
- |
-| FP_003 | User is on Forgot Password page | No password reset email is sent | 1. Enter unregistered email<br>2. Click Submit | Appropriate error message is displayed | |
-| FP_004 | User is on Forgot Password page | Validation message is displayed | 1. Enter invalid email format<br>2. Click Submit | Email format validation message is shown | <img width="471" height="486" alt="image" src="https://github.com/user-attachments/assets/c6fc08b2-f52d-4d0e-88c6-4159fc404a98" />
- |
-| FP_005 | User is on Forgot Password page | Validation message is displayed | 1. Leave email field blank<br>2. Click Submit | Required field validation message is shown | |
-| FP_006 | User has received a reset email | User is redirected to Reset Password page | 1. Open password reset email<br>2. Click reset link | Reset Password page is displayed | |
-| FP_007 | User is on Reset Password page | Password is updated successfully | 1. Enter new password<br>2. Enter confirm password<br>3. Click Save | Password reset is successful | |
-| FP_008 | User is on Reset Password page | Password is not updated | 1. Enter different values in Password and Confirm Password<br>2. Click Save | Password mismatch validation message is displayed | |
-| FP_009 | Password has been reset successfully | User logs in successfully | 1. Navigate to Sign In page<br>2. Enter new password<br>3. Click Sign In | User is logged in successfully | |
-| FP_010 | Password has been reset successfully | Login fails with old password | 1. Navigate to Sign In page<br>2. Enter old password<br>3. Click Sign In | Login is unsuccessful and an appropriate error message is displayed | |
+| FP_001 | User is on Sign In page | User is redirected to Forgot Password page | 1. Open Sign In page<br>2. Click Forgot Password | Forgot Password page is displayed successfully | image |
+| FP_002 | User is on Forgot Password page | Password reset email is sent | 1. Enter valid registered email<br>2. Click Submit | Success message is displayed and reset email is sent | image |
+| FP_003 | User is on Forgot Password page | No password reset email is sent | 1. Enter unregistered email<br>2. Click Submit | Appropriate error message is displayed | image |
+| FP_004 | User is on Forgot Password page | Validation message is displayed | 1. Enter invalid email format<br>2. Click Submit | Email format validation message is shown | image |
+| FP_005 | User is on Forgot Password page | Validation message is displayed | 1. Leave email field blank<br>2. Click Submit | Required field validation message is shown | image |
+| FP_006 | User has received reset email | User is redirected to Reset Password page | 1. Open email<br>2. Click reset link | Reset Password page is displayed | image |
+| FP_007 | User is on Reset Password page | Password is updated successfully | 1. Enter new password<br>2. Enter confirm password<br>3. Click Save | Password reset is successful | image |
+| FP_008 | User is on Reset Password page | Password is not updated | 1. Enter different password and confirm password<br>2. Click Save | Password mismatch validation message is displayed | image |
+| FP_009 | Password has been reset successfully | User logs in successfully | 1. Go to Sign In page<br>2. Enter new password<br>3. Click Sign In | User is logged in successfully | image |
+| FP_010 | Password has been reset successfully | Login fails with old password | 1. Go to Sign In page<br>2. Enter old password<br>3. Click Sign In | Login fails with appropriate error message | image |
