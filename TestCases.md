@@ -28,14 +28,13 @@
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
 |--------------|--------------|---------------|------------|-----------------|------------|
 | TC07 | User should have access to Sign In page | User should not be able to sign in with invalid email ID | Open Dataclenz (localhost), navigate to Sign In page, enter incorrect/unregistered Email ID, enter valid Password, click Sign In button | User should not be able to sign in. System should display error message like "Invalid email or password" and user should remain on Sign In page | ![IE_001](https://github.com/user-attachments/assets/14d8a3f9-a27b-40f0-b0ae-0b8c1d0304bb)
-
 | TC08 | User should have access to Sign In page | User should not be able to sign in with badly formatted email | Open Dataclenz (localhost), navigate to Sign In page, enter invalid email format (example: test@), enter valid Password, click Sign In button | System should show validation message like "Enter a valid email address" and prevent login |  ![IE_001](https://github.com/user-attachments/assets/14d8a3f9-a27b-40f0-b0ae-0b8c1d0304bb)
 | TC09 | User should have access to Sign In page | User should not be able to sign in with unregistered email ID | Open Dataclenz (localhost), navigate to Sign In page, enter unregistered Email ID, enter valid Password, click Sign In button | System should display error message like "User does not exist" or "Invalid credentials" and login should fail | 
            
            
            
            
-           <img width="423" height="538" alt="image" src="https://github.com/user-attachments/assets/ff2d7205-6207-41a5-9a6a-08c0d798b087" />
+    
 
 
 
