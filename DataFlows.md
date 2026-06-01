@@ -2,9 +2,7 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
 |--------------|--------------|---------------|------------|-----------------|------------|
-| TC13 | User should have access to Filters/Search page | User should be able to filter data using search | Open application page, locate Search field, enter valid keyword, click Search | System should display only matching records based on search input | (<img width="333" height="619" alt="image" src="https://github.com/user-attachments/assets/02dcc321-d754-4283-a885-215bc841a069" />
-)
-|
+| TC13 | User should have access to Filters/Search page | User should be able to filter data using search | Open application page, locate Search field, enter valid keyword, click Search | System should display only matching records based on search input | <img width="333" height="619" alt="image" src="https://github.com/user-attachments/assets/02dcc321-d754-4283-a885-215bc841a069" />|
 | TC14 | User should have access to Filters section | User should be able to filter records by Last Saved date | Open Filters, select Last Saved date range (mm/dd/yyyy), apply filter | System should display records matching selected Last Saved date range |  ![DF_001]|
 | TC15 | User should have access to Filters section | User should be able to filter records by Last Executed date | Open Filters, select Last Executed date range (mm/dd/yyyy), apply filter | System should display records matching selected Last Executed date range | |
 | TC16 | User should have access to status filter options | User should be able to filter by Inactive status | Select status filter = Inactive | System should display only Inactive records | |
