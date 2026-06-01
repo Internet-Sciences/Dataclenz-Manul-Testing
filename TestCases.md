@@ -80,9 +80,7 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
 |--------------|--------------|---------------|------------|-----------------|------------|
-
-| TC10 | User should have access to Sign In page | User should not be able to sign in with unregistered email | Open Dataclenz (localhost), navigate to Sign In page, enter unregistered Email ID (example: testuser123@gmail.com), enter valid Password, click Sign In button | User should not be able to sign in. System should display error message like "User does not exist" or "Invalid credentials". Login should be blocked and user should remain on Sign In page |  ![UE_009](https://github.com/user-attachments/assets/a761f110-afab-41fa-b13e-f801066fcd5d)
-
+| TC10 | User should have access to Sign In page | User should not be able to sign in with unregistered email | Open Dataclenz (localhost), navigate to Sign In page, enter unregistered Email ID (example: testuser123@gmail.com), enter valid Password, click Sign In button | User should not be able to sign in. System should display an error message like "User does not exist" or "Invalid credentials". Login should be blocked and user should remain on Sign In page | ![TC10 Unregistered Email Validation](https://github.com/user-attachments/assets/a761f110-afab-41fa-b13e-f801066fcd5d) |
 
 # Verify Signin with both fields empty
 
