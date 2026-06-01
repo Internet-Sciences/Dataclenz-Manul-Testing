@@ -58,14 +58,13 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| FP_001 | User is on Sign In page | User is redirected to Forgot Password page | 1. Open Sign In page<br>2. Click Forgot Password | Forgot Password page is displayed successfully | <img width="475" height="114" alt="image" src="https://github.com/user-attachments/assets/dbc98b1e-6b02-4380-96d5-580d85bf618c" />
- |
-| FP_002 | User is on Forgot Password page | Password reset email is sent | 1. Enter valid registered email<br>2. Click Submit | Success message is displayed and reset email is sent | image |
-| FP_003 | User is on Forgot Password page | No password reset email is sent | 1. Enter unregistered email<br>2. Click Submit | Appropriate error message is displayed | image |
-| FP_004 | User is on Forgot Password page | Validation message is displayed | 1. Enter invalid email format<br>2. Click Submit | Email format validation message is shown | image |
-| FP_005 | User is on Forgot Password page | Validation message is displayed | 1. Leave email field blank<br>2. Click Submit | Required field validation message is shown | image |
-| FP_006 | User has received reset email | User is redirected to Reset Password page | 1. Open email<br>2. Click reset link | Reset Password page is displayed | image |
-| FP_007 | User is on Reset Password page | Password is updated successfully | 1. Enter new password<br>2. Enter confirm password<br>3. Click Save | Password reset is successful | image |
-| FP_008 | User is on Reset Password page | Password is not updated | 1. Enter different password and confirm password<br>2. Click Save | Password mismatch validation message is displayed | image |
-| FP_009 | Password has been reset successfully | User logs in successfully | 1. Go to Sign In page<br>2. Enter new password<br>3. Click Sign In | User is logged in successfully | image |
-| FP_010 | Password has been reset successfully | Login fails with old password | 1. Go to Sign In page<br>2. Enter old password<br>3. Click Sign In | Login fails with appropriate error message | image |
+| FP_001 | User is on Sign In page | User is redirected to Forgot Password page | 1. Open Sign In page<br>2. Click Forgot Password | Forgot Password page is displayed successfully | ![FP_001](images/FP_001.png) |
+| FP_002 | User is on Forgot Password page | Password reset email is sent | 1. Enter valid registered email<br>2. Click Submit | Success message is displayed and reset email is sent | ![FP_002](images/FP_002.png) |
+| FP_003 | User is on Forgot Password page | No password reset email is sent | 1. Enter unregistered email<br>2. Click Submit | Appropriate error message is displayed | ![FP_003](images/FP_003.png) |
+| FP_004 | User is on Forgot Password page | Validation message is displayed | 1. Enter invalid email format<br>2. Click Submit | Email format validation message is shown | ![FP_004](images/FP_004.png) |
+| FP_005 | User is on Forgot Password page | Validation message is displayed | 1. Leave email field blank<br>2. Click Submit | Required field validation message is shown | ![FP_005](images/FP_005.png) |
+| FP_006 | User has reset email | User is redirected to Reset Password page | 1. Open email<br>2. Click reset link | Reset Password page is displayed | ![FP_006](images/FP_006.png) |
+| FP_007 | User is on Reset Password page | Password is updated successfully | 1. Enter new password<br>2. Enter confirm password<br>3. Click Save | Password reset is successful | ![FP_007](images/FP_007.png) |
+| FP_008 | User is on Reset Password page | Password mismatch error | 1. Enter different passwords<br>2. Click Save | Password mismatch validation message | ![FP_008](images/FP_008.png) |
+| FP_009 | Password reset done | User logs in successfully | 1. Open Sign In page<br>2. Enter new password<br>3. Click Sign In | Login successful | ![FP_009](images/FP_009.png) |
+| FP_010 | Password reset done | Login fails with old password | 1. Open Sign In page<br>2. Enter old password<br>3. Click Sign In | Login fails with error | ![FP_010](images/FP_010.png) |
