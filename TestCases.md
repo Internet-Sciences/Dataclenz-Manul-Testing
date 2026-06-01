@@ -25,25 +25,36 @@
 
 # Verify Sign-in with Incorrect EmailID
 
-| Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
-|--------------|--------------|---------------|-------|-----------------|------------|------|
-| TC04 | User should have application aceess to Signin account | User should not be able to sign-in account with incorrect Emaild | Open Dataclenz (localhost)                   EmailId: Dctest34@yopmail.com     Password: Test1234!                             Click Sign-up | User should receive message like Invalid Credentials and shoud see pop up message   |             <img width="423" height="538" alt="image" src="https://github.com/user-attachments/assets/ff2d7205-6207-41a5-9a6a-08c0d798b087" />
+| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
+|--------------|--------------|---------------|------------|-----------------|------------|
+| TC07 | User should have access to Sign In page | User should not be able to sign in with invalid email ID | Open Dataclenz (localhost), navigate to Sign In page, enter incorrect/unregistered Email ID, enter valid Password, click Sign In button | User should not be able to sign in. System should display error message like "Invalid email or password" and user should remain on Sign In page | ![IE_001](https://github.com/user-attachments/assets/14d8a3f9-a27b-40f0-b0ae-0b8c1d0304bb)
+
+| TC08 | User should have access to Sign In page | User should not be able to sign in with badly formatted email | Open Dataclenz (localhost), navigate to Sign In page, enter invalid email format (example: test@), enter valid Password, click Sign In button | System should show validation message like "Enter a valid email address" and prevent login |  ![IE_001](https://github.com/user-attachments/assets/14d8a3f9-a27b-40f0-b0ae-0b8c1d0304bb)
+| TC09 | User should have access to Sign In page | User should not be able to sign in with unregistered email ID | Open Dataclenz (localhost), navigate to Sign In page, enter unregistered Email ID, enter valid Password, click Sign In button | System should display error message like "User does not exist" or "Invalid credentials" and login should fail | 
+           
+           
+           
+           
+           <img width="423" height="538" alt="image" src="https://github.com/user-attachments/assets/ff2d7205-6207-41a5-9a6a-08c0d798b087" />
+
+
+
+# Verify Login with Only EmailId Filled
+
+| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
+|--------------|--------------|---------------|------------|-----------------|------------|
+| TC06 | User should have access to Sign In page | User should not be able to sign in with only Email filled | Open Dataclenz (localhost), navigate to Sign In page, enter Email ID: Dctest@gmail.com, leave Password field empty, click Sign In button | User should not be able to sign in. System should block login and display validation message like "Password is required" |  ![EF_001](https://github.com/user-attachments/assets/08ceed94-bf73-43ff-95ba-79fd709361aa)
+
+
+
+
 
 
 # Verify Login with Only Password Filled
 
-| Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
-|--------------|--------------|---------------|-------|-----------------|------------|------|
-| TC05 | User should have application aceess to Signin account | User should not be able to sign-in account with blank Emaild | Open Dataclenz (localhost)                   EmailId:      Password: Test1234!    |  User should not be able to signin account and should not be able to click on sign in button    |<img width="391" height="450" alt="image" src="https://github.com/user-attachments/assets/723f0e90-9883-4cca-ad20-7953fad9c9cd" />
-
-
-# Verify Login with Only Email Filled
-
-| Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
-|--------------|--------------|---------------|-------|-----------------|------------|------|
-| TC06 | User should have application access to Sign In account | User should not be able to sign in with blank Password | Open Dataclenz (localhost), navigate to Sign In page, enter Email ID: Dctest@gmail.com, leave Password field empty, click Sign In button | User should not be able to sign in with only Email filled. System should block login attempt and display validation message like "Password is required". User should remain on Sign In page |  ![FP_001](https://github.com/user-attachments/assets/242af6de-ecb2-4c27-a99a-d659246ccb48) | No errors observed |
-
-
+| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
+|--------------|--------------|---------------|------------|-----------------|------------|
+| TC05 | User should have access to Sign In page | User should not be able to sign in with only Password filled | Open Dataclenz (localhost), navigate to Sign In page, enter only Password, leave Email field empty, click Sign In button | User should not be able to sign in. System should block login and display validation message like "Email is required" | ![PF_001](https://github.com/user-attachments/assets/723f0e90-9883-4cca-ad20-7953fad9c9cd)
 
 
 
