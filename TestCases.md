@@ -88,8 +88,7 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
 |--------------|--------------|---------------|------------|-----------------|------------|
-
-| TC11 | User should have access to Sign In page | User should not be able to sign in with both fields empty | Open Dataclenz (localhost), navigate to Sign In page, leave Email field empty, leave Password field empty, click Sign In button | User should not be able to sign in. System should display validation messages like "Email is required" and "Password is required". Login should be blocked | ![BFE_009](https://github.com/user-attachments/assets/31446fe2-5f2a-4043-9899-5b71750ea419)
+| TC11 | User should have access to Sign In page | User should not be able to sign in with both fields empty | Open Dataclenz (localhost), navigate to Sign In page, leave Email field empty, leave Password field empty, click Sign In button | User should not be able to sign in. System should display validation messages like "Email is required" and "Password is required". Login should be blocked |   ![BFE_009](https://github.com/user-attachments/assets/31446fe2-5f2a-4043-9899-5b71750ea419)
 
 
 # Verify Account Lock after Multiple Failed Login Attempts
