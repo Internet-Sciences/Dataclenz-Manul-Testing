@@ -37,12 +37,11 @@
 | TC05 | User should have application aceess to Signin account | User should not be able to sign-in account with blank Emaild | Open Dataclenz (localhost)                   EmailId:      Password: Test1234!    |  User should not be able to signin account and should not be able to click on sign in button    |<img width="391" height="450" alt="image" src="https://github.com/user-attachments/assets/723f0e90-9883-4cca-ad20-7953fad9c9cd" />
 
 
-
 # Verify Login with Only Email Filled
 
 | Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
 |--------------|--------------|---------------|-------|-----------------|------------|------|
-| TC06 | User should have application aceess to Signin account | User should not be able to sign-in account with blank Password | Open Dataclenz (localhost)                   EmailId: Dctest@gmail.com     Password:     |  User should not be able to signin account and should not be able to click on sign in button  User can see message like password is required | <img width="422" height="476" alt="image" src="https://github.com/user-attachments/assets/242af6de-ecb2-4c27-a99a-d659246ccb48" />
+| TC06 | User should have application access to Sign In account | User should not be able to sign in with blank Password | Open Dataclenz (localhost), navigate to Sign In page, enter Email ID: Dctest@gmail.com, leave Password field empty, click Sign In button | User should not be able to sign in with only Email filled. System should block login attempt and display validation message like "Password is required". User should remain on Sign In page |  ![FP_001](https://github.com/user-attachments/assets/242af6de-ecb2-4c27-a99a-d659246ccb48) | No errors observed |
 
 
 
@@ -63,5 +62,5 @@
 | FP_006 | User has reset email | User is redirected to Reset Password page | 1. Open email<br>2. Click reset link | Reset Password page is displayed | ![FP_006](https://github.com/user-attachments/assets/90d11ce8-d64d-4c4a-9632-275a354bcaf6) |
 | FP_007 | User is on Reset Password page | Password is updated successfully | 1. Enter new password<br>2. Enter confirm password<br>3. Click Save | Password reset is successful | ![FP_007](images/FP_007.png) |
 | FP_008 | User is on Reset Password page | Password mismatch error | 1. Enter different passwords<br>2. Click Save | Password mismatch validation message | ![FP_008](https://github.com/user-attachments/assets/856df13f-4e58-401b-8bf7-8d64fc6818ff) |
-| FP_009 | Password reset done | User logs in successfully | 1. Open Sign In page<br>2. Enter new password<br>3. Click Sign In | Login successful | ![FP_009](images/FP_009.png) |
-| FP_010 | Password reset done | Login fails with old password | 1. Open Sign In page<br>2. Enter old password<br>3. Click Sign In | Login fails with error | ![FP_010](images/FP_010.png) |
+| FP_009 | Password reset done | User logs in successfully | 1. Open Sign In page<br>2. Enter new password<br>3. Click Sign In | Login successful | ![FP_009](https://github.com/user-attachments/assets/b2d98526-bf1b-4e5b-9d2b-84cabd8f7d97) |
+| FP_010 | Password reset done | Login fails with old password | 1. Open Sign In page<br>2. Enter old password<br>3. Click Sign In | Login fails with error | ![FP_010](https://github.com/user-attachments/assets/ab836c41-c32b-4590-9ebd-1c0ea798edce) |
