@@ -47,24 +47,21 @@
 
 
 
-# Verify Forgot Password Functionality
 
-| Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
-|--------------|--------------|---------------|-------|-----------------|------------|------|
-| TC07 | User should have application aceess to Signin account. | User should not be able to sign-in account with blank Password |
 
 
 # Forgot Password Test Cases
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| FP_001 | User is on Sign In page | User is redirected to Forgot Password page | 1. Open Sign In page<br>2. Click Forgot Password | Forgot Password page is displayed successfully | ![FP_001](https://github.com/user-attachments/assets/487133e3-284b-4f73-8ad0-4a6cc999a9b6) |
+| FP_001 | User is on Sign In page | User is redirected to Forgot Password page | 1. Open Sign In page<br>2. Click Forgot Password | Forgot Password page is displayed successfully | ![FP_001]( https://github.com/user-attachments/assets/18534993-e008-4deb-8314-aacf14a519f9 />
+) |
 | FP_002 | User is on Forgot Password page | Password reset email is sent | 1. Enter valid registered email<br>2. Click Submit | Success message is displayed and reset email is sent | ![FP_002](images/FP_002.png) |
 | FP_003 | User is on Forgot Password page | No password reset email is sent | 1. Enter unregistered email<br>2. Click Submit | Appropriate error message is displayed | ![FP_003](images/FP_003.png) |
 | FP_004 | User is on Forgot Password page | Validation message is displayed | 1. Enter invalid email format<br>2. Click Submit | Email format validation message is shown | ![FP_004](images/FP_004.png) |
 | FP_005 | User is on Forgot Password page | Validation message is displayed | 1. Leave email field blank<br>2. Click Submit | Required field validation message is shown | ![FP_005](images/FP_005.png) |
-| FP_006 | User has reset email | User is redirected to Reset Password page | 1. Open email<br>2. Click reset link | Reset Password page is displayed | ![FP_006](images/FP_006.png) |
+| FP_006 | User has reset email | User is redirected to Reset Password page | 1. Open email<br>2. Click reset link | Reset Password page is displayed | ![FP_006](https://github.com/user-attachments/assets/90d11ce8-d64d-4c4a-9632-275a354bcaf6) |
 | FP_007 | User is on Reset Password page | Password is updated successfully | 1. Enter new password<br>2. Enter confirm password<br>3. Click Save | Password reset is successful | ![FP_007](images/FP_007.png) |
-| FP_008 | User is on Reset Password page | Password mismatch error | 1. Enter different passwords<br>2. Click Save | Password mismatch validation message | ![FP_008](images/FP_008.png) |
+| FP_008 | User is on Reset Password page | Password mismatch error | 1. Enter different passwords<br>2. Click Save | Password mismatch validation message | ![FP_008](https://github.com/user-attachments/assets/856df13f-4e58-401b-8bf7-8d64fc6818ff) |
 | FP_009 | Password reset done | User logs in successfully | 1. Open Sign In page<br>2. Enter new password<br>3. Click Sign In | Login successful | ![FP_009](images/FP_009.png) |
 | FP_010 | Password reset done | Login fails with old password | 1. Open Sign In page<br>2. Enter old password<br>3. Click Sign In | Login fails with error | ![FP_010](images/FP_010.png) |
