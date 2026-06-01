@@ -43,3 +43,38 @@
 | Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
 |--------------|--------------|---------------|-------|-----------------|------------|------|
 | TC06 | User should have application aceess to Signin account | User should not be able to sign-in account with blank Password | Open Dataclenz (localhost)                   EmailId: Dctest@gmail.com     Password:     |  User should not be able to signin account and should not be able to click on sign in button  User can see message like password is required | <img width="422" height="476" alt="image" src="https://github.com/user-attachments/assets/242af6de-ecb2-4c27-a99a-d659246ccb48" />
+
+
+
+
+# Verify Forgot Password Functionality
+
+| Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
+|--------------|--------------|---------------|-------|-----------------|------------|------|
+| TC07 | User should have application aceess to Signin account. | User should not be able to sign-in account with blank Password |
+
+
+# Forgot Password Test Cases
+
+| Test Case ID | Test Scenario | Precondition | Test Steps | Expected Result |
+|--------------|---------------|--------------|------------|-----------------|
+| FP_001 | Verify Forgot Password link is available | User is on Sign In page | 1. Open Sign In page | Forgot Password link is visible and clickable |
+| FP_002 | Verify navigation to Forgot Password page | User is on Sign In page | 1. Click Forgot Password link | User is redirected to Forgot Password page |
+| FP_003 | Verify password reset with valid registered email | Registered user account exists | 1. Enter valid registered email<br>2. Click Submit | Password reset email is sent successfully |
+| FP_004 | Verify password reset with unregistered email | User account does not exist | 1. Enter unregistered email<br>2. Click Submit | Appropriate error message is displayed |
+| FP_005 | Verify password reset with invalid email format | User is on Forgot Password page | 1. Enter invalid email format<br>2. Click Submit | Validation message is displayed |
+| FP_006 | Verify password reset with empty email field | User is on Forgot Password page | 1. Leave email field blank<br>2. Click Submit | Required field validation message is displayed |
+| FP_007 | Verify email field accepts leading/trailing spaces | Registered user account exists | 1. Enter email with spaces<br>2. Click Submit | Spaces are trimmed and reset email is sent |
+| FP_008 | Verify email field is case-insensitive | Registered user account exists | 1. Enter email in uppercase/lowercase<br>2. Click Submit | Reset email is sent successfully |
+| FP_009 | Verify reset email contains valid reset link | Password reset email received | 1. Open email<br>2. Click reset link | User is redirected to Reset Password page |
+| FP_010 | Verify reset link expires after configured time | Reset email received | 1. Wait until link expires<br>2. Click reset link | Expired link message is displayed |
+| FP_011 | Verify user can reset password with valid link | Valid reset link available | 1. Enter new password<br>2. Confirm password<br>3. Click Save | Password is updated successfully |
+| FP_012 | Verify password and confirm password mismatch validation | User is on Reset Password page | 1. Enter different passwords<br>2. Click Save | Validation message is displayed |
+| FP_013 | Verify password policy validation | User is on Reset Password page | 1. Enter invalid password<br>2. Click Save | Appropriate validation message is displayed |
+| FP_014 | Verify successful login with new password | Password has been reset | 1. Login using new password | User logs in successfully |
+| FP_015 | Verify old password no longer works | Password has been reset | 1. Login using old password | Login fails with appropriate error |
+| FP_016 | Verify reset link cannot be reused | Password already reset | 1. Open previously used reset link | Link is invalid and cannot be reused |
+| FP_017 | Verify multiple password reset requests | Registered user account exists | 1. Request password reset multiple times | Latest reset link works successfully |
+| FP_018 | Verify Submit button behavior | User is on Forgot Password page | 1. Enter valid email | Submit button is enabled and functional |
+| FP_019 | Verify rate limiting/security protection | User is on Forgot Password page | 1. Submit multiple reset requests rapidly | System handles excessive requests securely |
+| FP_020 | Verify success message after password reset request | Registered user account exists | 1. Enter valid email<br>2. Click Submit | Success confirmation message is displayed |
