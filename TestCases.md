@@ -21,3 +21,10 @@
 |--------------|--------------|---------------|-------|-----------------|------------|------|
 | TC03 | User should have application aceess to Signin account | User should not be able to sign-in account with incorrect password | Open Dataclenz (localhost)                   EmailId: Dctest@yopmail.com     Password: Test1234!56                             Click Sign-up | User should receive message like Invalid Credentials and shoud see pop up message   |   <img width="400" height="526" alt="image" src="https://github.com/user-attachments/assets/ea52bff2-c339-44b9-b65b-543c85f47902" />
 
+
+
+# Verify Sign-in with Incorrect EmailID
+
+| Test Case ID | Precondition | Postcondition | Steps | Expected Result | Screenshot | Logs |
+|--------------|--------------|---------------|-------|-----------------|------------|------|
+| TC03 | User should have application aceess to Signin account | User should not be able to sign-in account with incorrect Emaild | Open Dataclenz (localhost)                   EmailId: Dctest34@yopmail.com     Password: Test1234!                             Click Sign-up | User should receive message like Invalid Credentials and shoud see pop up message   |             <img width="423" height="538" alt="image" src="https://github.com/user-attachments/assets/ff2d7205-6207-41a5-9a6a-08c0d798b087" />
