@@ -74,3 +74,26 @@
 | FP_008 | User is on Reset Password page | Password mismatch error | 1. Enter different passwords<br>2. Click Save | Password mismatch validation message | ![FP_008](https://github.com/user-attachments/assets/856df13f-4e58-401b-8bf7-8d64fc6818ff) |
 | FP_009 | Password reset done | User logs in successfully | 1. Open Sign In page<br>2. Enter new password<br>3. Click Sign In | Login successful | ![FP_009](https://github.com/user-attachments/assets/b2d98526-bf1b-4e5b-9d2b-84cabd8f7d97) |
 | FP_010 | Password reset done | Login fails with old password | 1. Open Sign In page<br>2. Enter old password<br>3. Click Sign In | Login fails with error | ![FP_010](https://github.com/user-attachments/assets/ab836c41-c32b-4590-9ebd-1c0ea798edce) |
+
+
+# Verify Signin with unregistered email
+
+| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
+|--------------|--------------|---------------|------------|-----------------|------------|
+
+| TC10 | User should have access to Sign In page | User should not be able to sign in with unregistered email | Open Dataclenz (localhost), navigate to Sign In page, enter unregistered Email ID (example: testuser123@gmail.com), enter valid Password, click Sign In button | User should not be able to sign in. System should display error message like "User does not exist" or "Invalid credentials". Login should be blocked and user should remain on Sign In page |  ![UE_009](https://github.com/user-attachments/assets/a761f110-afab-41fa-b13e-f801066fcd5d)
+
+
+# Verify Signin with both fields empty
+
+| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
+|--------------|--------------|---------------|------------|-----------------|------------|
+
+| TC11 | User should have access to Sign In page | User should not be able to sign in with both fields empty | Open Dataclenz (localhost), navigate to Sign In page, leave Email field empty, leave Password field empty, click Sign In button | User should not be able to sign in. System should display validation messages like "Email is required" and "Password is required". Login should be blocked | ![BFE_009](https://github.com/user-attachments/assets/31446fe2-5f2a-4043-9899-5b71750ea419)
+
+
+# Verify Account Lock after Multiple Failed Login Attempts
+
+| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
+|--------------|--------------|---------------|------------|-----------------|------------|
+| TC12 | User should have a registered account in the system and access to Sign In page | User account should be locked after multiple failed login attempts | Open Dataclenz (localhost), navigate to Sign In page, enter valid Email ID with incorrect Password repeatedly (e.g., 5 consecutive attempts), click Sign In each time | After exceeding maximum allowed attempts, system should lock the account and display message like "Account locked due to multiple failed login attempts. Please try again later or reset password." User should not be able to log in even with correct password until account is unlocked |  ![MS_009](https://github.com/user-attachments/assets/699a8779-64de-4d6c-b5b8-da6871e9c0c7)
