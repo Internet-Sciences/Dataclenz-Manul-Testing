@@ -1,6 +1,6 @@
 # Verify Filters, Search, Status and Sort Functionality
 
-| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |
+| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot |  Status |  Ticket |
 |--------------|--------------|---------------|------------|-----------------|------------|
 | TC13 | User should have access to Filters/Search page | User should be able to filter data using search | Open application page, locate Search field, enter valid keyword, click Search | System should display only matching records based on search input | <img width="333" height="619" alt="image" src="https://github.com/user-attachments/assets/02dcc321-d754-4283-a885-215bc841a069" />|
 | TC14 | User should have access to Filters section | User should be able to filter records by Last Saved date | Open Filters, select Last Saved date range (mm/dd/yyyy), apply filter | System should display records matching selected Last Saved date range |  ![DF_001]|
