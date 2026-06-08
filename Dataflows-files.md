@@ -88,9 +88,7 @@
 | TC09 | Recipe save dialog is open | Recipe should not be saved without a valid name | 1. Click "+" next to Recipes 2. Leave Recipe Name blank 3. Click Save | Validation message should be displayed and recipe should not be saved | <img width="419" height="333" alt="image" src="https://github.com/user-attachments/assets/43657602-7848-4543-9acd-d6ecc10a77b0" />|  |  |
 
 
-first screen : <img width="324" height="1017" alt="image" src="https://github.com/user-attachments/assets/fedf4d06-9a53-4751-81fe-de0ab825ab9f" />
-got to outputscreen: <img width="336" height="662" alt="image" src="https://github.com/user-attachments/assets/caa0ff65-ed84-4548-9b13-dfcfc026fd27" />
-Run now or schedul action set :<img width="330" height="932" alt="image" src="https://github.com/user-attachments/assets/4d101f0c-befa-4629-87f9-777bc3fe25a7" />
+
 
 # Verify Calculation Functionality
 
