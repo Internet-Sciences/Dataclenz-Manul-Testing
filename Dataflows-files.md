@@ -47,3 +47,33 @@
 | TC08 | File exists in DataFlows list | User should be able to delete file | 1. Click delete icon 2. Confirm deletion | File should be removed from DataFlows list permanently | <img src="https://github.com/user-attachments/assets/322fb038-d451-4824-8afb-219129dfdbfb" /> | ✅ | |
 | TC09 | File exists and supports execution | User should be able to play/run file | 1. Click play button on file | File should execute successfully or trigger processing workflow | <img src="https://github.com/user-attachments/assets/8342968e-455b-4759-b76b-c16b2eb305f1" /> | ✅ | |
 | TC10 | File exists in DataFlows page | User should be able to back up file | 1. Click "+" (backup) icon 2. Confirm action | Backup copy should be created successfully | <img src="https://github.com/user-attachments/assets/54384e6e-4e40-4028-ba19-a8d74fa03e6e" /> | ✅ | |
+
+
+
+
+# Verify DataFlows - Processing Panel Functionalities
+
+| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot | Status | Ticket |
+|--------------|--------------|---------------|------------|-----------------|------------|--------|--------|
+
+| TC01 | User is logged in and on DataFlows page with files available | Processing panel should open on selecting a file | 1. Navigate to DataFlows page 2. Click on any file 3. View right-hand Processing panel | Processing panel should open with all available processing options | <img width="357" height="823" alt="image" src="https://github.com/user-attachments/assets/a22e10ce-6383-4c7a-8610-730ef923f1e1" />| Pass |  |
+
+| TC02 | User has selected a file in DataFlows | Recipes option should be accessible | 1. Select file 2. Click on "Recipes" under Processing | User should be navigated to Recipes configuration section | ⬜ | Pass |DF-302 |
+
+| TC03 | User is on Processing panel | User should be able to pause automatic reruns | 1. Open Processing panel 2. Click "Pause automatic reruns" | Automatic reruns should be paused successfully | ⬜ |  |  |
+
+| TC04 | User has paused processing actions | User should be able to run paused actions | 1. Click "Run paused actions" | Previously paused actions should execute successfully | ⬜ |  |  |
+
+| TC05 | User is on Processing panel | User should be able to open Build with AI feature | 1. Click "✨ Build with AI" option | AI processing interface should open successfully | ⬜ |  |  |
+
+| TC06 | User is on Processing panel | User should be able to perform Calculations | 1. Click "Calculations" 2. Enter required input | System should process calculations and show correct output | ⬜ |  |  |
+
+| TC07 | User is on Processing panel | User should be able to Compare and Correct data | 1. Click "Compare and Correct" 2. Select datasets | System should highlight differences and allow corrections | ⬜ |  |  |
+
+| TC08 | User is on Processing panel | User should be able to Edit Columns | 1. Click "Edit Columns" 2. Modify column structure | Columns should update successfully in dataset | ⬜ |  |  |
+
+| TC09 | User is on Processing panel | User should be able to Edit Rows | 1. Click "Edit Rows" 2. Modify row data | Row changes should be saved and reflected in dataset | ⬜ |  |  |
+
+| TC10 | User is on Processing panel | User should be able to Format Data | 1. Click "Format Data" 2. Apply formatting rules | Data should be formatted correctly as per selected rules | ⬜ |  |  |
+
+| TC11 | User is on Processing panel | User should be able to use List Lookup | 1. Click "List Lookup" 2. Provide lookup values | Matching records should be displayed correctly | ⬜ |  |  |
