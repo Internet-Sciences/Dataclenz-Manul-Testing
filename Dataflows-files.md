@@ -30,3 +30,21 @@
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot | Status | Ticket |
 |--------------|--------------|---------------|------------|-----------------|------------|--------|--------|
 | TC10 | User is on DataFlows page with GitHub integration enabled | Data can be sourced from GitHub (if feature exists) | 1. Navigate to DataFlows 2. Select GitHub source 3. Authenticate 4. Select repo file | File should be fetched from GitHub and listed in DataFlows | ⬜ |  |  |
+
+
+
+# Verify DataFlows Page - File Count, Views, and File Actions
+
+| Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot | Status | Ticket |
+|--------------|--------------|---------------|------------|-----------------|------------|--------|--------|
+
+| TC01 | User is logged in and on DataFlows page with uploaded files | User should see correct total and filtered file count | 1. Login to DataClenz 2. Navigate to DataFlows page 3. Observe file summary section | Total files and filtered files count should match uploaded data | <img width="204" height="84" alt="image" src="https://github.com/user-attachments/assets/7d0e85c1-a726-4c53-80a5-cf3a5cf50547" /> | Pass | |
+| TC02 | User has multiple uploaded files | Filtered view should update based on applied filters | 1. Observe file count change | Filtered file count should update dynamically based on selection | ⬜ | Pass |  |
+| TC03 | User is on DataFlows page | User should be able to switch to Grid View | 1. Navigate to DataFlows 2. Click Grid View icon | Files should be displayed in grid layout without UI break | <img width="1525" height="354" alt="image" src="https://github.com/user-attachments/assets/7623e857-c73b-4ab7-b299-177fe806c510" /> | Pass |  |
+| TC04 | User is on DataFlows page in Grid View | User should be able to switch to List View | 1. Click List View icon | Files should be displayed in list format correctly | <img width="1535" height="481" alt="image" src="https://github.com/user-attachments/assets/80adb74d-8e56-4125-b857-bbdd912a8694" /> | Pass |  |
+| TC05 | File exists in DataFlows list | User should be able to rename file | 1. Click rename option on file 2. Enter new file name 3. Save changes | File name should be updated successfully and reflected in UI | <img width="351" height="200" alt="image" src="https://github.com/user-attachments/assets/26cf0753-f2f3-4db9-b069-35b41ea5f6e9" /> <img width="462" height="338" alt="image" src="https://github.com/user-attachments/assets/6018f515-15a0-4b61-a846-af7124752217" /> | Pass |  |
+| TC06 | File exists in DataFlows list | File settings should open on gear icon click | 1. Click gear/settings icon on file | Settings panel/modal should open with file options | <img width="1522" height="188" alt="image" src="https://github.com/user-attachments/assets/d3f1e389-9128-4a40-b252-b141176161fe" />| Pass|  |
+| TC07 | File exists in DataFlows list | User should be able to download file | 1. Click download icon on file | File should be downloaded successfully to local system | <img width="1522" height="188" alt="image" src="https://github.com/user-attachments/assets/eafbff05-79d7-496c-9af9-23cce5bc751c" /> | Pass |  |
+| TC08 | File exists in DataFlows list | User should be able to delete file | 1. Click delete icon 2. Confirm deletion | File should be removed from DataFlows list permanently | <img width="1522" height="188" alt="image" src="https://github.com/user-attachments/assets/322fb038-d451-4824-8afb-219129dfdbfb" /> | Pass |  |
+| TC09 | File exists and supports execution | User should be able to play/run file | 1. Click play button on file | File should execute successfully or trigger processing workflow | <img width="1522" height="188" alt="image" src="https://github.com/user-attachments/assets/8342968e-455b-4759-b76b-c16b2eb305f1" /> | Pass |  |
+| TC10 | File exists in DataFlows page | User should be able to back up file | 1. Click "+" (backup) icon 2. Confirm action | Backup copy of file should be created successfully | <img width="1522" height="188" alt="image" src="https://github.com/user-attachments/assets/54384e8e-4e40-4028-ba19-a8d74fa03e6e" /> | Pass |  |
