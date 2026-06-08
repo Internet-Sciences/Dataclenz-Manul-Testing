@@ -50,7 +50,6 @@
 
 
 
-
 # Verify DataFlows - Processing Panel Functionalities
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot | Status | Ticket |
