@@ -2,7 +2,7 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot | Status | Ticket |
 |--------------|--------------|---------------|------------|-----------------|------------|--------|--------|
-| TC_LIST_001 | User is logged in | Lists page is displayed | Navigate to the Lists page | Lists page loads successfully with Search, Filters, Upload List section, and uploaded files displayed | | | |
+| TC_LIST_001 | User is logged in | Lists page is displayed | Navigate to the Lists page | Lists page loads successfully with Search, Filters, Upload List section, and uploaded files displayed | <img width="1046" height="674" alt="image" src="https://github.com/user-attachments/assets/18437345-f996-40c8-972d-7cc8aeba6d68" />| | |
 | TC_LIST_002 | User is on Lists page | Search field is available | Verify Search textbox | Search textbox is visible and editable |<img width="1354" height="679" alt="image" src="https://github.com/user-attachments/assets/fcbad844-6c29-4994-9a65-a8a8e24f6484" /> <img width="1402" height="669" alt="image" src="https://github.com/user-attachments/assets/9f4dc4ea-af4b-4ccf-b22a-4266683a0be0" />| | |
 | TC_LIST_003 | User has uploaded lists | Matching files are displayed | Enter an existing filename in Search | Only matching file(s) should be displayed |<img width="1400" height="669" alt="image" src="https://github.com/user-attachments/assets/d6c39df7-f339-41f7-b17a-a46dc4724243" />| | |
 | TC_LIST_004 | User has uploaded lists | All files displayed | Clear Search field | Complete list should be displayed |<img width="1023" height="590" alt="image" src="https://github.com/user-attachments/assets/c023cdac-96ca-45ec-a9c8-fecd2a97d423" /> | | |
@@ -22,15 +22,15 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot | Status | Ticket |
 |--------------|--------------|---------------|------------|-----------------|------------|--------|--------|
-| TC_LIST_NEG_001 | User is on Lists page | Upload prevented | Click Upload without selecting a file | Validation message should be displayed | | | |
-| TC_LIST_NEG_002 | User is on Lists page | Invalid file rejected | Select unsupported file (.txt, .exe, .zip) | System should reject unsupported file type | | | |
-| TC_LIST_NEG_003 | User is on Lists page | Upload prevented | Select an empty CSV/XLSX file and upload | Validation message should be displayed | | | |
+| TC_LIST_NEG_001 | User is on Lists page | Upload prevented | Click Upload without selecting a file | Validation message should be displayed |<img width="803" height="838" alt="image" src="https://github.com/user-attachments/assets/4bb3af60-fe11-452f-be43-40caaa383e42" /> | | |
+| TC_LIST_NEG_002 | User is on Lists page | Invalid file rejected | Select unsupported file (.txt, .exe, .zip) | System should reject unsupported file type |<img width="774" height="835" alt="image" src="https://github.com/user-attachments/assets/688710cd-6e01-4c85-badd-c025dc76dca0" /> | | |
+| TC_LIST_NEG_003 | User is on Lists page | Upload prevented | Select an empty CSV/XLSX file and upload | Validation message should be displayed |<img width="774" height="835" alt="image" src="https://github.com/user-attachments/assets/852fd2e2-f98e-43c4-aa35-984c4dd5f8d2" /> | | |
 | TC_LIST_NEG_004 | User is on Lists page | Upload prevented | Select corrupted file | System should display upload failure message | | | |
-| TC_LIST_NEG_005 | Uploaded files exist | No results shown | Search for a filename that does not exist | "No results found" or empty list should be displayed | | | |
-| TC_LIST_NEG_006 | Uploaded files exist | Invalid date ignored | Enter invalid Created At date (if allowed) | Validation should prevent invalid date | | | |
-| TC_LIST_NEG_007 | Uploaded files exist | Rename rejected | Rename file using blank filename | Validation message should appear | | | |
-| TC_LIST_NEG_008 | Uploaded files exist | Rename rejected | Rename using duplicate filename | System should prevent duplicate names or display validation | | | |
-| TC_LIST_NEG_009 | Uploaded files exist | Delete cancelled | Click Delete then cancel confirmation | File should remain in the list | | | |
+| TC_LIST_NEG_005 | Uploaded files exist | No results shown | Search for a filename that does not exist | "No results found" or empty list should be displayed | <img width="702" height="372" alt="image" src="https://github.com/user-attachments/assets/c23cf51a-1a5d-4a66-b49d-1fef99c19c27" />| | |
+| TC_LIST_NEG_006 | Uploaded files exist | Invalid date ignored | Enter invalid Created At date (if allowed) | Validation should prevent invalid date |<img width="726" height="343" alt="image" src="https://github.com/user-attachments/assets/09aff02e-81c1-443e-8a9e-0e1fd13b54dc" /> | | |
+| TC_LIST_NEG_007 | Uploaded files exist | Rename rejected | Rename file using blank filename | Validation message should appear | <img width="422" height="326" alt="image" src="https://github.com/user-attachments/assets/15f706e6-66d7-466c-8ff1-a68eda4b2469" />| | |
+| TC_LIST_NEG_008 | Uploaded files exist | Rename rejected | Rename using duplicate filename | System should prevent duplicate names or display validation |<img width="462" height="353" alt="image" src="https://github.com/user-attachments/assets/9106e948-5bf9-478b-b7ef-e7446e6d86ca" /> | | |
+| TC_LIST_NEG_009 | Uploaded files exist | Delete cancelled | Click Delete then cancel confirmation | File should remain in the list | <img width="572" height="320" alt="image" src="https://github.com/user-attachments/assets/be31ea27-9d4b-46a0-a1d5-5b6b2bd3a263" />| | |
 | TC_LIST_NEG_010 | User loses internet connection | Upload fails gracefully | Start upload then disconnect internet | Appropriate network error message should appear | | | |
 | TC_LIST_NEG_011 | Session expired | User redirected | Perform Upload/Delete after session timeout | User should be redirected to login or shown session expired message | | | |
 | TC_LIST_NEG_012 | Uploaded files exist | Download failure handled | Attempt download when backend is unavailable | Appropriate error message should be displayed | | | |
@@ -39,8 +39,8 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot | Status | Ticket |
 |--------------|--------------|---------------|------------|-----------------|------------|--------|--------|
-| TC_LIST_EDGE_001 | User is on Lists page | Large file uploaded | Upload file at maximum supported size | Upload should complete successfully within expected time | | | |
-| TC_LIST_EDGE_002 | User is on Lists page | Upload rejected | Upload file exceeding maximum size | System should reject file and display size limit message | | | |
+| TC_LIST_EDGE_001 | User is on Lists page | Large file uploaded | Upload file at maximum supported size | Upload should complete successfully within expected time | <img width="1009" height="148" alt="image" src="https://github.com/user-attachments/assets/502746e9-ff59-4064-895e-faf21f779003" />| | |
+| TC_LIST_EDGE_002 | User is on Lists page | Upload rejected | Upload file exceeding maximum size | System should reject file and display size limit message |<img width="1361" height="830" alt="image" src="https://github.com/user-attachments/assets/6222c2ff-f4c5-4a7e-91da-df82181e619f" />| | |
 | TC_LIST_EDGE_003 | User is on Lists page | Long filename handled | Upload file with very long filename | Filename should display correctly or be truncated without affecting upload | | | |
 | TC_LIST_EDGE_004 | User is on Lists page | Special characters handled | Upload file with spaces and special characters in filename | Upload should complete successfully if supported | | | |
 | TC_LIST_EDGE_005 | User has many uploaded files | Pagination/scroll works | Verify page with large number of uploaded files | Performance should remain acceptable and files should load correctly | | | |
@@ -48,6 +48,6 @@
 | TC_LIST_EDGE_007 | Uploaded files exist | Search performance verified | Search while hundreds of files exist | Results should appear quickly and accurately | | | |
 | TC_LIST_EDGE_008 | Uploaded files exist | Multiple actions handled | Rapidly click Upload/Delete/Edit buttons | System should prevent duplicate requests and remain stable | | | |
 | TC_LIST_EDGE_009 | Upload in progress | Refresh behavior verified | Refresh browser during upload | Upload should resume, fail gracefully, or notify user according to application behavior | | | |
-| TC_LIST_EDGE_010 | Uploaded files exist | Unicode supported | Upload file with Unicode characters in filename | Filename should display correctly without corruption | | | |
-| TC_LIST_EDGE_011 | Uploaded files exist | Date filter boundary verified | Filter using earliest/latest available upload date | Correct files should be displayed | | | |
+| TC_LIST_EDGE_010 | Uploaded files exist | Unicode supported | Upload file with Unicode characters in filename | Filename should display correctly without corruption |<img width="452" height="378" alt="image" src="https://github.com/user-attachments/assets/39b91972-496c-46da-86ef-534a910fe503" /> <img width="989" height="127" alt="image" src="https://github.com/user-attachments/assets/2669bd4d-f2fe-4bcf-964d-42109b788ad3" /> | | |
+| TC_LIST_EDGE_011 | Uploaded files exist | Date filter boundary verified | Filter using earliest/latest available upload date | Correct files should be displayed |<img width="1377" height="690" alt="image" src="https://github.com/user-attachments/assets/6d4c7232-a6b1-46a5-be11-dae1726e6ef4" /> | | |
 | TC_LIST_EDGE_012 | Uploaded files exist | Count accuracy verified | Upload, delete, and search files | Total and Filtered counts should always remain accurate | | | |
