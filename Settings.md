@@ -2,8 +2,7 @@
 
 | Test Case ID | Precondition | Postcondition | Test Steps | Expected Result | Screenshot | Status | Ticket |
 |--------------|--------------|---------------|------------|-----------------|------------|--------|--------|
-| TC_001 | User is logged in | Settings page is displayed | Navigate to Settings page | Settings page should load successfully with all sections displayed |<img width="1151" height="1046" alt="image" src="https://github.com/user-attachments/assets/a1c11dc1-33e0-4dd1-93d3-155c8c464f9e" />
-<img width="1129" height="715" alt="image" src="https://github.com/user-attachments/assets/0b3925a6-5970-42ff-abda-ab2f5ca06042" /> | | |
+| TC_001 | User is logged in | Settings page is displayed | Navigate to Settings page | Settings page should load successfully with all sections displayed |<img width="1198" height="1056" alt="image" src="https://github.com/user-attachments/assets/b6a3e10f-0ec6-40f6-8de5-ff4611870b97" /> <img width="1143" height="711" alt="image" src="https://github.com/user-attachments/assets/0732d522-4db8-433f-8728-9f0f0f2914c0" />  | | |
 | TC_002 | User is on Settings page | Preferences saved | Check CSV Files checkbox and click Save Preferences | Preferences should be saved successfully | <img width="1073" height="98" alt="image" src="https://github.com/user-attachments/assets/8daacf81-80ee-4b6b-a171-645978ba4a29" />| | |
 | TC_003 | User is on Settings page | Preferences saved | Check Excel Files (XLSX) checkbox and click Save Preferences | XLSX upload source should be enabled | <img width="1090" height="108" alt="image" src="https://github.com/user-attachments/assets/268c93d6-1650-4344-b76e-888e009a96f9" />| | |
 | TC_004 | User is on Settings page | Preferences saved | Check Excel Files (XLS) checkbox and click Save Preferences | XLS upload source should be enabled |<img width="1105" height="109" alt="image" src="https://github.com/user-attachments/assets/e765b1d8-4909-4d27-8352-98cfac3263c8" /> | | |
