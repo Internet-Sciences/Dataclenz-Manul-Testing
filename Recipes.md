@@ -1,4 +1,4 @@
-Recipes are the saved processing workflows created from the Data Flows tab. After performing operations (for example, calculations, filtering, or transformations) on a data flow and saving the workflow as a recipe, it appears in the Recipes tab. If a saved recipe is deleted, it is moved to the History tab.
+## Recipes are the saved processing workflows created from the Data Flows tab. After performing operations (for example, calculations, filtering, or transformations) on a data flow and saving the workflow as a recipe, it appears in the Recipes tab. If a saved recipe is deleted, it is moved to the History tab.
 
 
 # Recipes - Positive Test Cases
